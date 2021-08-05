@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "i-collapse": "../../../dist/collapse/index",
+    "i-collapse-item": "../../../dist/collapse-item/index",
+    "i-tab-bar": "../../../dist/tab-bar/index",
+    "i-tab-bar-item": "../../../dist/tab-bar-item/index"
+  }
+}

@@ -1,0 +1,21 @@
+/* pages/everyrecords/jujia/jujia.wxss */
+
+page {
+  background-color: rgba(239, 239, 240, 1);
+}
+
+.top {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 50rpx 50rpx;
+  background-color: #4a5fa8;
+  color: #ffffff;
+  align-content: center;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #9E9E9E;
+}
+
+.title {
+  font-size: x-large;
+}

@@ -1,0 +1,112 @@
+<!--pages/everyrecords/jujia/jujia.wxml-->
+<view class="top">
+    <text class="title">居家·娱乐</text>
+</view>
+
+<view class="caption-wrap">
+    <i-collapse name="{{name}}">
+        <i-collapse-item title="用水" name="name1">
+            <view slot="content">
+                <i-tab-bar bindchange="handleChange">
+                    <i-tab-bar-item key="1" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/xy.png">
+                    </i-tab-bar-item>
+                    <i-tab-bar-item key="2" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/sltsy.png">
+                    </i-tab-bar-item>
+                </i-tab-bar>
+            </view>
+        </i-collapse-item>
+        <i-collapse-item title="用电" name="name2">
+            <view slot="content">
+
+                <i-tab-bar bindchange="handleChange">
+
+                    <i-tab-bar-item key="3" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/ktsy.png">
+                    </i-tab-bar-item>
+
+                    <i-tab-bar-item key="4" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/dtsy.png">
+                    </i-tab-bar-item>
+
+                    <i-tab-bar-item key="5" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/tdsy.png">
+                    </i-tab-bar-item>
+
+                    <i-tab-bar-item key="6" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/dnsy.png">
+                    </i-tab-bar-item>
+
+                </i-tab-bar>
+
+            </view>
+
+            <view slot="content">
+
+                <i-tab-bar bindchange="handleChange">
+
+                    <i-tab-bar-item key="7" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/bxsy.png">
+                    </i-tab-bar-item>
+
+                    <i-tab-bar-item key="8" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/xyjsy.png">
+                    </i-tab-bar-item>
+
+                    <i-tab-bar-item key="9" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/ysjsy.png">
+                    </i-tab-bar-item>
+
+                    <i-tab-bar-item key="10" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/sjsy.png">
+                    </i-tab-bar-item>
+
+                </i-tab-bar>
+
+            </view>
+
+            <view slot="content">
+
+                <i-tab-bar bindchange="handleChange" >
+                    <i-tab-bar-item key="11" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/dyjsy.png">
+                    </i-tab-bar-item>
+                </i-tab-bar>
+            </view>
+
+        </i-collapse-item>
+        <i-collapse-item title="用气" name="name3">
+            <view slot="content">
+                <i-tab-bar bindchange="handleChange" >
+                    <i-tab-bar-item key="12" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/rqzsy.png">
+                    </i-tab-bar-item>
+                </i-tab-bar>
+            </view>
+        </i-collapse-item>
+        <i-collapse-item title="日用消耗" name="name4">
+            <view slot="content">
+
+            <i-tab-bar bindchange="handleChange">
+
+                <i-tab-bar-item key="13" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/slp.png">
+                </i-tab-bar-item>
+
+                <i-tab-bar-item key="14" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/sld.png">
+                </i-tab-bar-item>
+
+                <i-tab-bar-item key="15" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/ycxkz.png">
+                </i-tab-bar-item>
+
+                <i-tab-bar-item key="16" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/xyy.png">
+                </i-tab-bar-item>
+
+            </i-tab-bar>
+
+            </view>
+
+            <view slot="content">
+
+                <i-tab-bar bindchange="handleChange">
+
+                    <i-tab-bar-item key="17" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/xhyp.png">
+                    </i-tab-bar-item>
+
+                    <i-tab-bar-item key="18" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/ljzz.png">
+                    </i-tab-bar-item>
+
+                </i-tab-bar>
+
+            </view>
+        </i-collapse-item>
+    </i-collapse>
+</view>

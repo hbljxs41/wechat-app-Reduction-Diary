@@ -1,0 +1,159 @@
+/* pages/myscore/myscore.wxss */
+
+page { background-color: #495b9e; }
+
+
+.ctr {
+  margin: 10px auto;
+  width:96%;
+  height: 100%;
+  border-radius: 30rpx;
+  background-color: #8294bc;
+  display: flex;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+}
+
+.ctr_head{
+  margin: 20rpx auto 0rpx;
+  width: 94%;
+  border-radius: 30rpx;
+  background-color: #778cb7;
+}
+
+
+.pic {
+  margin-top: 10px;
+  margin-left: 140px;
+  width: 64px;
+  height: 64px;
+}
+
+.sub {
+  margin: 20rpx auto;
+  width: 94%;
+  height: 400rpx;
+  border-radius: 30rpx;
+  background-color: #657bad;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.canvas {
+  width: 94%;
+  height: 600rpx;
+  margin: auto;
+  background-color: #7085b3;
+  border-radius: 30rpx;
+}
+
+.title {
+  margin: 30rpx;
+  font-size: 35rpx;
+}
+
+.number {
+  margin: 20rpx;
+  font-size: 60rpx;
+  font-weight: 600;
+}
+
+.container {
+  width: 94%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  background-color: #657bad;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10rpx;
+  /* border:3px solid white; */
+}
+
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.ECcontainer {
+  /* position: absolute;  */
+  margin: 10px auto;
+  width: 94%;
+  height: 800rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 30rpx;
+} 
+
+
+.ECcontainer_bar {
+  /* position: absolute;  */
+  margin: 10px 0px;
+  width: 80%;
+  height: 800rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  /* background-color: #7085b3; */
+  border-radius: 30rpx;
+} 
+
+.ctr1 {
+  width: 94%;
+  height: 840rpx;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  border-radius: 30rpx;
+}
+
+.btnlist {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.smbtn {
+  flex: 1;
+  margin: 5px 0px;
+  width: 60px;
+  height: 80px;
+  /* border:3px solid yellow; */
+  border-radius: 20px;
+}
+
+.ctr_nmb {
+  display: flex;
+  flex-direction: row;
+  margin: 0px auto;
+}
+
+.number {
+  padding:15px;
+  border-radius: 10px;
+  font-size:30px;
+  font-family:fantasy;
+  flex:1;
+  display: flex;
+  justify-content: center;
+  background-color: #778cb7;
+}
+
+.expln {
+  margin: 10rpx 30rpx;
+  font-size: 32rpx;
+}

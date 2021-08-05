@@ -1,0 +1,98 @@
+<!--pages/everyrecords/jujia/main/main.wxml-->
+<view class="topinfo">
+  <!-- <picker mode="date" value="{{time}}" bindchange="changeDate" class="date">
+    
+    <text>(轻触以选择日期)</text>
+  </picker> -->
+  <text class='date'style="font-size: larger;">记录日期：{{time}}</text>
+  <text>\n</text>
+  <text class='top'>今日记录总碳排放量{{T}}kgCO2</text>
+  <text>\n</text>
+  <text class='top'>今日本项量{{Ti}}kgCO2</text>
+  <text>\n</text>
+  <text class='top'>昨日本项量{{LastTi}}kgCO2</text>
+  <view>
+    <text>\n</text>
+  </view>
+</view>
+
+
+<i-panel title="排放行为记录    {{table[theId][0]}}">
+  
+  <block wx:if="{{table[theId][1] != 9}}">
+    <view class='title'>
+      <view style="flex:2">活动量记录</view>
+      <view style="flex:1; padding:0px 10px">碳排放量</view>
+    </view>
+    <view class="container">
+      <view class="inputarea" style="flex:2">
+        <block wx:if="{{table[theId][1] == 8}}">
+          <i-input-number value="{{ today }}" min="0" max="100" step="0.1" bindchange="handleChange1" />
+        </block>
+        <block wx:elif="{{(table[theId][0] == '燃气灶使用') || (table[theId][0] == '电冰箱使用') || (table[theId][0] == '洗衣机使用')}}">
+          <i-input-number value="{{ today }}" min="0" max="100" step="0.5" bindchange="handleChange1" />
+        </block>
+        <block wx:else>
+          <i-input-number value="{{ today }}" min="0" max="100" step="1" bindchange="handleChange1" />
+        </block>
+        <text style="padding:5px">{{table[theId][2]}}</text>
+      </view>
+      <view style="flex:1">
+        <text>{{today * table[theId][3] / 1000}} kgCO2</text>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class='address' data-key="start" bindtap='onChangeAddress'>
+      <text>出发地</text>
+      <input  placeholder='请选择出发地点' value='{{startname}}'></input>
+    </view>
+    <view class='address' data-key="dest" bindtap='onChangeAddress'>
+      <text>目的地</text>
+      <input  placeholder='请选择目的地点' value='{{destname}}'></input>
+    </view>
+    <view class='title'>
+      <view style="flex:2">路程</view>
+      <view style="flex:1; padding:0px 10px">碳排放量</view>
+    </view>
+    <view class="container">
+      <view class="inputarea" style="flex:2">
+        <text>{{today}}公里</text>
+      </view>
+      <view style="flex:1">
+        <text>{{today * table[theId][3] / 1000}} kgCO2</text>
+      </view>
+    </view>
+    <view>
+    <button bindtap="route" type="primary"  style='background-color:#495b9e;'>计算路程</button>
+    </view>
+    <text>{{errorinfo}}</text>
+  </block>
+</i-panel>
+
+  <block wx:if="{{table[theId][1] > 0 && table[theId][1] < 9}}">
+    <i-panel title="低碳行为记录/提示">
+    <block wx:for="{{ massage[table[theId][1]-1] }}" wx>
+      <view>
+        <view class="title">
+          <view style="flex:2">{{item.action}}</view>
+          <view style="flex:1; padding:0px 10px">减排量</view>
+        </view>
+        <view class="container">
+          <view class="inputarea" style="flex:2">
+            <i-input-number value="{{ num[index] }}" min="0" max="100" step="1" data-key="{{index}}"
+            data-rate="{{item.rate}}" bindchange="handleChange" />
+            <text style="padding:5px">{{item.unit}}</text>
+          </view>
+          <view style="flex:1">
+            <text>{{num[index] * item.rate / 1000}}kgCO2</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </i-panel>
+</block>
+
+<view>
+  <button bindtap="addData" type="primary" style='background-color:#495b9e;position:fixed;width:100%;bottom:0'>新增数据</button>
+</view>

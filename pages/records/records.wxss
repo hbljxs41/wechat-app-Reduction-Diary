@@ -1,0 +1,33 @@
+/* pages/records/records.wxss */
+
+page {
+  background-color: rgba(239, 239, 240, 1);
+}
+
+.top {
+  
+}
+
+.ctr {
+  margin:10px auto;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 30rpx 50rpx 
+}
+
+.card-icon {
+  display: block;
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 20px;
+  box-shadow: 6px 6px 11px 0px #9E9E9E;
+}
+
+.date{
+  padding: 30px 50px 15px;
+}
+

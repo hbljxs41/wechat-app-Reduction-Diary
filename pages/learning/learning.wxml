@@ -1,0 +1,43 @@
+<!--pages/learning/learning.wxml-->
+<view class="ctr">
+    <view class="top">
+        <image class="card-icon" src="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/assets/dtdt.png"></image>
+    </view>
+    <view class="top">
+        <image class="card-icon" bindtap="bindViewTap" src="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/assets/mrdt.png"></image>
+    </view>
+    <view class="top">
+        <image class="card-icon" bindtap="bindViewTap" src="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/assets/zxdt.png"></image>
+    </view>
+</view>
+<view class="container">
+    <image class="line" src="../../images/cj.png"></image>
+</view>
+<view class="ctr">
+    <view class="top" style="flex:1">
+        <image class="middle_title" src="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/assets/dtzs.png"></image>
+    </view>
+    <view class="top" style="flex:2">
+        <image class="middle_box"src="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/assets/gjcss.png"></image>
+    </view>
+</view>
+<!-- <view class="ctr">
+    <view class="top">
+        <image class="down_box" src="../../images/L3.png"></image>
+    </view>
+    <view class="top">
+        <image class="down_box" src="../../images/L2.png"></image>
+    </view>
+</view>
+<view class="ctr">
+    <view class="top">
+        <image class="down_box" style="height:235px" src="../../images/L1.png"></image>
+    </view>
+    <view class="top" style="flex-direction: column; justify-items: space-between;">
+        <image class="down_box" src="../../images/L4.png"></image>
+        <image class="down_box" src="../../images/L4.png"></image>
+    </view>
+</view> -->
+<view class="ctr">
+    <image class="tz" src="../../images/tz.png"></image>
+</view>

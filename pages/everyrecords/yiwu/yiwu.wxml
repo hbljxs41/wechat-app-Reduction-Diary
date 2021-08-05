@@ -1,0 +1,81 @@
+<!--pages/everyrecords/yiwu/yiwu.wxml-->
+<view class="top">
+    <text class="title">衣物</text>
+</view>
+
+<view class="caption-wrap">
+    <i-collapse name="{{name}}">
+        <i-collapse-item title="网购" name="name1">
+            <view slot="content">
+
+                <i-tab-bar bindchange="handleChange">
+
+                    <i-tab-bar-item key="47" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/sy.png">
+                    </i-tab-bar-item>
+
+                    <i-tab-bar-item key="48" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/kz.png">
+                    </i-tab-bar-item>
+
+                    <i-tab-bar-item key="49" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/jkwt.png">
+                    </i-tab-bar-item>
+
+                    <i-tab-bar-item key="50" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/lyq.png">
+                    </i-tab-bar-item>
+
+                </i-tab-bar>
+
+            </view>
+
+            <view slot="content">
+
+                <i-tab-bar bindchange="handleChange">
+
+                    <i-tab-bar-item key="51" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/st.png">
+                    </i-tab-bar-item>
+
+                    <i-tab-bar-item key="52" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/qtps.png">
+                    </i-tab-bar-item>
+
+                </i-tab-bar>
+
+            </view>
+        </i-collapse-item>
+        <i-collapse-item title="实体店购买" name="name2">
+            <view slot="content">
+
+                <i-tab-bar bindchange="handleChange">
+
+                    <i-tab-bar-item key="53" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/sy.png">
+                    </i-tab-bar-item>
+
+                    <i-tab-bar-item key="54" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/kz.png">
+                    </i-tab-bar-item>
+
+                    <i-tab-bar-item key="55" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/jkwt.png">
+                    </i-tab-bar-item>
+
+                    <i-tab-bar-item key="56" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/lyq.png">
+                    </i-tab-bar-item>
+
+                </i-tab-bar>
+
+            </view>
+
+            <view slot="content">
+
+                <i-tab-bar bindchange="handleChange">
+
+                    <i-tab-bar-item key="57" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/st.png">
+                    </i-tab-bar-item>
+
+                    <i-tab-bar-item key="58" img="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/icons/qtps.png">
+                    </i-tab-bar-item>
+
+                </i-tab-bar>
+
+            </view>
+
+        </i-collapse-item>
+        
+    </i-collapse>
+</view>

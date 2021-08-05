@@ -1,0 +1,22 @@
+/* pages/welcome/welcome.wxss */
+
+page { background-color: #495b9e; height:100%;  }
+
+
+
+.logo {
+  margin: 30px auto 0px;
+  /* width: 397rpx;
+  height: 367rpx; */
+  width: 210px;
+  height: 239px;
+}
+
+.fm {
+  width: 90%;
+  height: 50%;
+}
+
+.btn {
+  margin: 0px auto 20px;
+}

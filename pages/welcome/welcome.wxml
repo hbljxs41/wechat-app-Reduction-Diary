@@ -1,0 +1,7 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="container">
+  <image class="logo" src="../../images/logo03.png"></image>
+  <image class="fm" src="../../images/fm.png"></image>
+  <button class="btn" bindtap="bindViewTap">开始今日记录</button>
+</view>
+

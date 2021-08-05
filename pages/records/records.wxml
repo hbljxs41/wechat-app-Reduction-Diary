@@ -1,0 +1,26 @@
+<view class="top">
+      <picker mode="date" value="{{time}}" bindchange="changeDate" class="date">
+            <text style="font-size: larger;">记录日期：{{time}}</text>
+            <text>(轻触以选择)</text>
+      </picker>
+</view>
+<view class="ctr">
+      <view class="container">
+            <image bindtap="bindViewTap" data-key="xuexi" class="card-icon" src="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/assets/01.png">
+            </image>
+            <image bindtap="bindViewTap" data-key="jujia" class="card-icon" src="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/assets/02.png">
+            </image>
+      </view>
+
+      <view class="container">
+            <image bindtap="bindViewTap" data-key="jiaotong" class="card-icon" src="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/assets/03.png">
+            </image>
+            <image bindtap="bindViewTap" data-key="yiwu" class="card-icon" src="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/assets/04.png">
+            </image>
+      </view>
+
+      <view class="container">
+            <image bindtap="bindViewTap" data-key="yinshi" class="card-icon" src="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/assets/05.png">
+            </image>
+      </view>
+</view>

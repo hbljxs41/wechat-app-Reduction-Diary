@@ -1,0 +1,49 @@
+<!--pages/myscore/myscore.wxml-->
+
+<view class="ctr">
+  <view class="ctr_head">
+    <image class="pic" src="cloud://base-0g78at3sf25eebc6.6261-base-0g78at3sf25eebc6-1301783345/assets/grtb.png"></image>
+    <text style="font-size: 25rpx">个人等级：节能小白</text>
+    <view class="sub">
+      <text class="title">个人累计减排量</text>
+      <view class="ctr_nmb">
+        <view class="number">{{view_value[0]}}</view>
+        <view class="number">{{view_value[1]}}</view>
+        <view class="number">{{view_value[2]}}</view>
+        <view class="number">{{view_value[3]}}</view>
+        <view class="number">{{view_value[4]}}</view>
+      </view>
+      <text class="expln">相当于小汽车行驶{{v1}}km的碳排放量，相当于{{v2}}棵树一年的二氧化碳固定量。</text>
+    </view>
+  </view>
+  <view class="container">
+    <view class="btn" data-key='1' bindtap="changetable" style="border:{{border1}};">今日成绩</view>
+    <view class="btn" data-key='2' bindtap="changetable" style="border:{{border2}};">本周成绩</view>
+    <view class="btn" data-key='3' bindtap="changetable" style="border:{{border3}};">本月成绩</view>
+  </view>
+  <block wx:if="{{display == 1}}">
+    <view class="ctr1">
+      <view class="ECcontainer_bar">
+        <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec_bar }}"></ec-canvas>
+      </view>
+      <view class="btnlist">
+        <image class="smbtn" src="../../images/S1.png" style="border:{{Iborder1}}" data-key='1' bindtap="changebar"></image>
+        <image class="smbtn" src="../../images/S4.png" style="border:{{Iborder2}}" data-key='2' bindtap="changebar"></image>
+        <image class="smbtn" src="../../images/S2.png" style="border:{{Iborder3}}" data-key='3' bindtap="changebar"></image>
+        <image class="smbtn" src="../../images/S3.png" style="border:{{Iborder4}}" data-key='4' bindtap="changebar"></image>
+        <image class="smbtn" src="../../images/S5.png" style="border:{{Iborder5}}" data-key='5' bindtap="changebar"></image>
+      </view>
+    </view>
+
+  </block>
+  <block wx:elif="{{display == 2}}">
+    <view class="ECcontainer">
+      <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec_line }}"></ec-canvas>
+    </view>
+  </block>
+  <block wx:elif="{{display == 3}}">
+    <view class="ECcontainer">
+      <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec_radar }}"></ec-canvas>
+    </view>
+  </block>
+</view>
